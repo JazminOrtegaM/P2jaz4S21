@@ -28,7 +28,7 @@ public class archivos {
         String linea;
         Datos datos;
         try {
-            FileReader archivo = new FileReader("DATOS.ang");
+            FileReader archivo = new FileReader("DATOS.jaz");
             BufferedReader br = new BufferedReader(archivo);
             
             while((linea = br.readLine())!= null){
@@ -52,7 +52,7 @@ public class archivos {
         boolean estado= true;
         FileWriter archivo;
         try {
-            archivo = new FileWriter("DATOS.ang", true);
+            archivo = new FileWriter("DATOS.jaz", true);
             BufferedWriter bw = new BufferedWriter(archivo);
             bw.write(Convertir.ajson(cadena)+"\n");
             bw.close();
